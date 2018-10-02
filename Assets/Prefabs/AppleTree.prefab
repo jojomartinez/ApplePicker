@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4113525507875196}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AppleTree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 33309712103202810}
   - component: {fileID: 135163496850334616}
   - component: {fileID: 23199421557033030}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TreeTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 33846250331933298}
   - component: {fileID: 136264418586209744}
   - component: {fileID: 23205887333209904}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trunk
   m_TagString: Untagged
   m_Icon: {fileID: 0}

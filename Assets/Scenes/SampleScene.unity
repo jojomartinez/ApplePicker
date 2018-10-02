@@ -311,7 +311,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.85, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -328,6 +328,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae42a320e14cdb24997ea592bc01b8be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  basketPrefab: {fileID: 1370980137165990, guid: fe32a42a7015b83429791e5a6560f591,
+    type: 2}
+  numBaskets: 3
+  basketBottomY: -14
+  basketSpacingY: 2
 --- !u!1001 &1280120520
 Prefab:
   m_ObjectHideFlags: 0
@@ -341,7 +346,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4113525507875196, guid: c4197d7aea75a7c44a2ac0177341c799, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 4
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4113525507875196, guid: c4197d7aea75a7c44a2ac0177341c799, type: 2}
       propertyPath: m_LocalPosition.z
@@ -367,90 +372,40 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4113525507875196, guid: c4197d7aea75a7c44a2ac0177341c799, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113525507875196, guid: c4197d7aea75a7c44a2ac0177341c799, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4113525507875196, guid: c4197d7aea75a7c44a2ac0177341c799, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4197d7aea75a7c44a2ac0177341c799, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1577557379
+--- !u!1 &1571453623 stripped
 GameObject:
+  m_PrefabParentObject: {fileID: 1271857429527558, guid: c4197d7aea75a7c44a2ac0177341c799,
+    type: 2}
+  m_PrefabInternal: {fileID: 1280120520}
+--- !u!114 &1571453624
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1577557383}
-  - component: {fileID: 1577557382}
-  - component: {fileID: 1577557381}
-  - component: {fileID: 1577557380}
-  m_Layer: 0
-  m_Name: Basket
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &1577557380
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1577557379}
+  m_GameObject: {fileID: 1571453623}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 2100000, guid: 044973602da1b4647b44b649020e60a8, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!65 &1577557381
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1577557379}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1577557382
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1577557379}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1577557383
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1577557379}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -6, z: 0}
-  m_LocalScale: {x: 4, y: 1, z: 4}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f86341ed5b11e94ca2a3080d5030eee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  applePrefab: {fileID: 1634970543871868, guid: f67c09dd5225b844a9a11e097edf67c9,
+    type: 2}
+  speed: 10
+  leftAndRightEdge: 30
+  chanceToChangeDirections: 0.1
+  secondsBetweenAppleDrops: 1
