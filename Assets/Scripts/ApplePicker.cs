@@ -42,7 +42,6 @@ public class ApplePicker : MonoBehaviour {
         GameObject tBasketGO = basketList[basketIndex];
         basketList.RemoveAt(basketIndex);
         Destroy(tBasketGO);
+        //resraro9990uuk
     }
 }
-
-]

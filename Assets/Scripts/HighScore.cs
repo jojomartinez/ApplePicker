@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class HighScore : MonoBehaviour {
 
+    static public int score = 1000;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -11,6 +13,7 @@ public class HighScore : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        TextMesh scoreGT = this.GetComponent<TextMesh>();
+        scoreGT.text = "High Score: " + score;
 	}
 }
