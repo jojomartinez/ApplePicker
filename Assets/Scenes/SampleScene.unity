@@ -426,6 +426,7 @@ MonoBehaviour:
   numBaskets: 3
   basketBottomY: -14
   basketSpacingY: 2
+  basketList: []
 --- !u!1 &966606492
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,6 +553,7 @@ GameObject:
   - component: {fileID: 1338545667}
   - component: {fileID: 1338545666}
   - component: {fileID: 1338545665}
+  - component: {fileID: 1338545668}
   m_Layer: 0
   m_Name: ScoreCounter
   m_TagString: Untagged
@@ -627,6 +629,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!132 &1338545668
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1338545664}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: 1000
+  m_Anchor: 2
+  m_Alignment: 2
+  m_PixelOffset: {x: -10, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 24
+  m_FontStyle: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &1571453623 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1271857429527558, guid: c4197d7aea75a7c44a2ac0177341c799,
@@ -659,6 +684,7 @@ GameObject:
   - component: {fileID: 1694561438}
   - component: {fileID: 1694561437}
   - component: {fileID: 1694561436}
+  - component: {fileID: 1694561439}
   m_Layer: 0
   m_Name: HighScore
   m_TagString: Untagged
@@ -734,3 +760,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!132 &1694561439
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1694561435}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: 'High Score: 1000'
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 10, y: -6}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 0}
+  m_Material: {fileID: 0}
+  m_FontSize: 24
+  m_FontStyle: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1

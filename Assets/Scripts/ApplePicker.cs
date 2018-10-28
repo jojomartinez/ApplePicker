@@ -34,14 +34,21 @@ public class ApplePicker : MonoBehaviour {
     {
         GameObject[] tAppleArray = GameObject.FindGameObjectsWithTag("Apples");
 
-            foreach (GameObject tGO in tAppleArray)
+        foreach (GameObject tGO in tAppleArray)
         {
             Destroy(tGO);
         }
+    
         int basketIndex = basketList.Count-1;
         GameObject tBasketGO = basketList[basketIndex];
         basketList.RemoveAt(basketIndex);
         Destroy(tBasketGO);
-        //resraro9990uuk
+
+        if (basketList.Count == 0)
+        {
+            Application.LoadLevel("SampleScene");
+
+        }
+       
     }
 }

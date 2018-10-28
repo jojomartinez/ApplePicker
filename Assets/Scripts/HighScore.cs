@@ -6,8 +6,17 @@ public class HighScore : MonoBehaviour {
 
     static public int score = 1000;
 
-	// Use this for initialization
-	void Start () {
+    private void Awake()
+    {
+        if (PlayerPrefs.HasKey("ApplePickerHighScore"))
+        {
+            score = PlayerPrefs.GetInt("ApplePickerHighscore");
+        }
+        PlayerPrefs.SetInt("ApplePickerHighScore", score);
+    }
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -15,5 +24,11 @@ public class HighScore : MonoBehaviour {
 	void Update () {
         TextMesh scoreGT = this.GetComponent<TextMesh>();
         scoreGT.text = "High Score: " + score;
+
+
+        if (score > PlayerPrefs.GetInt("ApplePickerHighScore"))
+        {
+            PlayerPrefs.SetInt("ApplePickerHighScore", score);
+        }
 	}
 }
